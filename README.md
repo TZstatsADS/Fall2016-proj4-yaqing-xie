@@ -15,14 +15,14 @@ Term: Fall 2016
 + **Methodology 1:**
 	* Extract all raw features of training songs from h5 files. 
 	* Considering different songs have different dimensions of features, calculate each feature's median number of dimensions first, and then either truncate of append the feature so the dimension can be consistent among different songs.
-	* Use topic modeling to assign training songs to different topics.
-	* Use KNN or RF to predict a new test song's topic based on its features.
+	* Use *topic modeling* to assign training songs to different topics.
+	* Use *KNN or RF* to predict a new test song's topic based on its features.
 	* After a test song is given a topic, recommend the lyrics that are the most common among training songs under this specific topic.
 + **Methodology 2:**
 	* For each training song, calculate music features such as beat interval, bar interval, mean max loudness, number of sections etc.
 	* Transfer the obtained features into factor data type.
-	* Use topic modeling to assign training songs to different topics.
-	* Use association rule to understand how features associate with topics.
+	* Use *topic modeling* to assign training songs to different topics.
+	* Use *association rule* to understand how features associate with topics.
 	* When given a new test song, calculate its desired feature and then apply association rule to predict its topic.
 	* Recommend the lyrics that are the most common among training songs under this specific topic.
 	

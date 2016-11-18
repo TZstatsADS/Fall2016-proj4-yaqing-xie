@@ -21,14 +21,17 @@ Term: Fall 2016
   + GROUP 4-music loudness: mean/max/bin/var value of max loudness
   + GROUP 5-tone quality 1: avg/max/min/var value of each row in the pitches matrix
   + GROUP 6-tone quality 2: avg/max/min/var value of each row in the timbre matrix <br />
-  <img src="figs/feature_processing_2.png" width="500"> <br />
+  ![sh](figs/feature_processing_2.png)
   
 * In order to transfer the obtained features into factor data type, do K-means clustering on each feature group.
 * Use **topic modeling** to assign training songs with different topics.
 * Use **association rule** to understand how features associate with topics.
 * Sample output: <br />
   <img src="figs/association_rule_sample.png" width="500"> <br />
-  Following the steps above, the output suggests that the most informative features among Topic 1 songs are pitches and timbre.
+  Following the steps above, the output suggests that the most informative features among Topic 1 songs are pitches and timbre.<br />
+  <img src="figs/association_rule_sample_2.png" width="500"> <br />
+  For Topic 2, pitches is still the most important music feature while song pace and song structure also contribute when associating music features with topics.
+  
 
 ### 3. Lyric Prediction
 * **Extract** all raw features of training songs from h5 files. 

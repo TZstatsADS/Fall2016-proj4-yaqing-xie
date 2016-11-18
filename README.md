@@ -25,13 +25,13 @@ Term: Fall 2016
 * Use **topic modeling** to assign training songs with different topics.
 * Use **association rule** to understand how features associate with topics.
 * Sample output:
-  ![screenshot](figs/association_rule_sample.png)
+  ![image](figs/association_rule_sample.png)
   Following the steps above, the output suggests that the most informative features among Topic 1 songs are pitches and timbre.
 
 ### 3. Lyric Prediction
 * **Extract** all raw features of training songs from h5 files. 
 * Considering different songs have different dimensions of features, for each feature, calculate the *median* number of dimensions first, and then either truncate of append the feature so the dimension can be consistent among different songs.
-  ![screenshot](figs/feature_processing.png)
+  ![image](figs/feature_processing.png)
 * Use **topic modeling** to assign training songs with different topics.
 * Use **KNN or RF** to predict a new test song's topic based on its features.
 * After a test song is given a topic, recommend the lyrics that are the most common among training songs under this specific topic.

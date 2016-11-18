@@ -20,7 +20,9 @@ Term: Fall 2016
   + GROUP 3-music structure: number of sections, avg/max/min/var time proportion of each section
   + GROUP 4-music loudness: mean/max/bin/var value of max loudness
   + GROUP 5-tone quality 1: avg/max/min/var value of each row in the pitches matrix
-  + GROUP 6-tone quality 2: avg/max/min/var value of each row in the timbre matrix
+  + GROUP 6-tone quality 2: avg/max/min/var value of each row in the timbre matrix <br />
+  <img src="figs/feature_processing_2.png" width="500"> <br />
+  
 * In order to transfer the obtained features into factor data type, do K-means clustering on each feature group.
 * Use **topic modeling** to assign training songs with different topics.
 * Use **association rule** to understand how features associate with topics.

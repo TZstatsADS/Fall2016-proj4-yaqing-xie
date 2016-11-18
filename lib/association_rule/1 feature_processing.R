@@ -87,7 +87,7 @@ for(i in 1:file_num){
     # create subset of features
     train_data_id[n,] <- song_id
     train_data_dura[n,] <- duration
-    train_data_pace[n,] <- tnt,  tatums_int)
+    train_data_pace[n,] <- c(bars_int, beats_int, segments_int,  tatums_int)
     train_data_sect[n,] <- c(sections_num, sections_avg_prop,
                              sections_max_prop, sections_min_prop, sections_var_prop)
     train_data_loud[n,] <- c(max_loudness_avg, max_loudness_max, max_loudness_min,

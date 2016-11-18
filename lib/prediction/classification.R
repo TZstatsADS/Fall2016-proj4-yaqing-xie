@@ -1,13 +1,4 @@
-############################################################
-############################################################
-######                 classification                 ######
-############################################################
-# suppose we have our "feature matrix" with dimension 2350 * features
-# and we have our "clusters", which is obtained based on topic clustering
-# then we have a label (cluster) for each data point (music)
-# random forest
-# now we will use random forest to do multiple classification
-# final: RF
+# read data
 setwd("/Users/YaqingXie/Desktop/3-Applied Data Science/Fall2016-proj4-yaqing-xie/data/prediction")
 
 music_feature_train<-read.csv("train.csv")

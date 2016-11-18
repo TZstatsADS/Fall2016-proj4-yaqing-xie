@@ -24,20 +24,24 @@ Term: Fall 2016
 * In order to transfer the obtained features into factor data type, do K-means clustering on each feature group.
 * Use **topic modeling** to assign training songs with different topics.
 * Use **association rule** to understand how features associate with topics.
-* Sample output:
-  ![image](figs/association_rule_sample.png)
+* Sample output: <br />
+  <img src="figs/association_rule_sample.png" width="500"> <br />
   Following the steps above, the output suggests that the most informative features among Topic 1 songs are pitches and timbre.
 
 ### 3. Lyric Prediction
 * **Extract** all raw features of training songs from h5 files. 
-* Considering different songs have different dimensions of features, for each feature, calculate the *median* number of dimensions first, and then either truncate of append the feature so the dimension can be consistent among different songs.
-  ![image](figs/feature_processing.png)
+* Considering different songs have different dimensions of features, for each feature, calculate the *median* number of dimensions first, and then either truncate of append the feature so the dimension can be consistent among different songs. <br />
+  <img src="figs/feature_processing.png" width="500"> <br />
 * Use **topic modeling** to assign training songs with different topics.
-* Use **KNN or RF** to predict a new test song's topic based on its features.
-* After a test song is given a topic, recommend the lyrics that are the most common among training songs under this specific topic.
+* For each topic of songs, calculate the vocabulary probability distribution.
+* Use **KNN or RF** to predict a new test song's topic based on its features.<br />
+  <img src="figs/topic_prediction.png" width="500"> <br />
+* After a test song is given a topic, recommend the lyrics that are of the highest probability in the vocabulary of this topic.
 
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
+
+
 
 ```
 proj/
